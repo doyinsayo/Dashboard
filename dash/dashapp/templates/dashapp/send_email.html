@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send Emails</title>
-</head>
-<body>
+<title>Send Emails</title>
+{% extends 'dashapp/index.html' %}
+    
+{% block content %}
+
+<div class="container">
+    <br>
     <h2>Send E-mail</h2>
+    <br>
     <form action="#" method="post">
-        {% csrf_token %}
-        <input type="email" name="email" placeholder="Enter email address here">
-        <button type="submit"> Send Email Now</button>
-    </form>
-</body>
-</html>
+    {% csrf_token %}
+    <input type="email" name="email" placeholder="Enter email address here"><br>
+    <br>
+    <button class="btn btn-primary" type="submit"> Send Email Now</button>
+   </form>
+</div>
+
+{% endblock content %}    
+
+   
