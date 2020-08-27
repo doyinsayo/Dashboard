@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import gdal
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -129,9 +128,3 @@ STATIC_URL = '/static/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
 
-#GDAL_LIBRARY_PATH = 'home/sue/local/lib/libgdal.so'
-
-#GOOGLE_MAPS_KEY = ''
-#TRACKING_USE_GEOIP = True
-#GEOIP_PATH = ''
-#GEOIP_CACHE_TYPE = ''
